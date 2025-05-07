@@ -1,4 +1,4 @@
-FROM tomcat:10.1.40-jdk17
+FROM eclipseecsp/ecsp-base-java17-tomcat10-apr:1.0.0
 
 #ARG ARTIFACT_ID
 #ENV ARTIFACT_ID ${ARTIFACT_ID}
@@ -8,7 +8,6 @@ FROM tomcat:10.1.40-jdk17
 
 #New Code
 ENV CATALINA_OPTS="-server -Xmx2G -Xms1G -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+DisableExplicitGC -Djava.awt.headless=true"
-ENV api_context-path="/hcp-auth-webapp"
 ADD target/device-activation.war /tmp/hcp-auth-webapp.war
 COPY src/scripts/* /opt/hcp-auth-webapp/bin/
 
