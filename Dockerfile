@@ -8,6 +8,7 @@ FROM tomcat:10.1.40-jdk17
 
 #New Code
 ENV CATALINA_OPTS="-server -Xmx2G -Xms1G -XX:+UseG1GC -XX:MaxGCPauseMillis=20 -XX:InitiatingHeapOccupancyPercent=35 -XX:+DisableExplicitGC -Djava.awt.headless=true"
+ENV api_context-path="/hcp-auth-webapp"
 ADD target/device-activation.war /tmp/hcp-auth-webapp.war
 COPY src/scripts/* /opt/hcp-auth-webapp/bin/
 
