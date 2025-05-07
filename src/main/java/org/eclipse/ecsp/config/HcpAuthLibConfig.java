@@ -25,6 +25,8 @@ import org.eclipse.ecsp.auth.lib.config.AuthProperty;
 import org.eclipse.ecsp.common.config.EnvConfig;
 import org.eclipse.ecsp.common.config.EnvConfigLoader;
 import org.eclipse.ecsp.springauth.client.rest.SpringAuthRestClient;
+import org.springframework.boot.autoconfigure.ImportAutoConfiguration;
+import org.springframework.boot.autoconfigure.web.client.RestTemplateAutoConfiguration;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.ComponentScan;
 import org.springframework.context.annotation.Configuration;
@@ -35,6 +37,7 @@ import org.springframework.context.annotation.Configuration;
  */
 @Configuration
 @ComponentScan(basePackages = "org.eclipse.ecsp")
+@ImportAutoConfiguration(RestTemplateAutoConfiguration.class)
 public class HcpAuthLibConfig {
 
     @Resource(name = "hcpAuthLibConfigLoader")
