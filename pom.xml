@@ -23,7 +23,7 @@
     <modelVersion>4.0.0</modelVersion>
     <groupId>org.eclipse.ecsp</groupId>
     <artifactId>device-activation</artifactId>
-    <version>0.1.2</version>
+    <version>1.0.0</version>
     <packaging>war</packaging>
 
     <name>device-activation</name>
@@ -157,8 +157,7 @@
         <junit.jupiter.version>5.6.2</junit.jupiter.version>
         <postgres.sql.version>42.7.2</postgres.sql.version>
         <tomcat.embed.version>10.1.39</tomcat.embed.version>
-        <!-- Ignite SDK version -->
-        <device.common.version>0.1.1</device.common.version>
+        <device.common.version>1.0.0</device.common.version>
         <log4j.version>2.17.1</log4j.version>
 	    <api-registry-common.version>1.1.0</api-registry-common.version>
 	    <kotlin.version>1.9.25</kotlin.version>
@@ -206,7 +205,6 @@
     </pluginRepositories>
 
     <dependencies>
-        <!-- Ignite SDK Dependencies -->
         <dependency>
             <groupId>org.eclipse.ecsp</groupId>
             <artifactId>device-common</artifactId>
