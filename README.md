@@ -37,7 +37,7 @@ from the command line interface.
 
 ### Prerequisites
 
-1. The list of tools required to build and run the project:
+The list of tools required to build and run the project:
    * Java 17
    * Maven 3.8 or higher
 
