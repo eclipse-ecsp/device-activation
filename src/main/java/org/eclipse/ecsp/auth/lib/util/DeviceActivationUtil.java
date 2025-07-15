@@ -55,7 +55,7 @@ import java.security.SecureRandom;
 public class DeviceActivationUtil {
     private static final int MAX_LENGTH = 14;
     private static final int PREFIX = 2;
-    private static final int ALPHANUM_LENGTH = 64;
+    private static final int ALPHANUM_LENGTH = 50;
     private static final int VALUE_5 = 5;
     private static final int VALUE_8 = 8;
     private static final int VALUE_2 = 2;
